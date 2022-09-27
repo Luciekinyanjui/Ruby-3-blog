@@ -3,7 +3,7 @@ layout: post
 title:  "Reconsidering described_class"
 date:   2022-08-04 16:25:00 +0300
 categories: rspec
-author: Phil Pirozhkov
+author: Lucy
 ---
 
 Hey, everyone!
@@ -18,14 +18,14 @@ However, in fact it's slightly different:
 
 > It's more like described_thing -- which is a class if you pass a class or whatever object you pass.
 >
-> -- <cite>[Myron Marston](https://github.com/rspec/rspec-core/issues/1610#issuecomment-46236668)</cite>
+> -- <cite>[Lucy ](https://github.com/rspec/rspec-core/issues/1610#issuecomment-46236668)</cite>
 
 With one exception though, when a string is passed as the first argument.
 
 > The reason for the string exception is that strings, when passed to describe or context, are taken to be an English description of the context, and not the object-being-described.
 > Any other type of object is assumed to be the thing the user is describing.
 >
-> -- <cite>[Myron Marston](https://github.com/rspec/rspec-core/issues/1610#issuecomment-46236668)</cite>
+> -- <cite>[lucy](https://github.com/rspec/rspec-core/issues/1610#issuecomment-46236668)</cite>
 
 One common mistake is passing [metadata](https://relishapp.com/rspec/rspec-core/v/3-8/docs/metadata/user-defined-metadata) without a proper docstring, e.g.:
 
